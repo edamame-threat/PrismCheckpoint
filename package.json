@@ -1,0 +1,51 @@
+{
+  "name": "prism-checkpoint",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "PrismCheckpoint – TypeScript/Vite project leveraging multiple Coinbase SDKs.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@coinbase/smart-wallet": "^0.6.0",
+    "@coinbase/cdp-sdk": "^1.1.1",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/agentkit": "^0.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "Base-first UI components and helpers for onchain applications."
+    },
+    "@coinbase/wallet-sdk": {
+      "repo": "coinbase/wallet-sdk",
+      "why": "Integration and management of Coinbase Wallet connections."
+    },
+    "@coinbase/smart-wallet": {
+      "repo": "coinbase/smart-wallet",
+      "why": "Account abstraction and smart wallet flows."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "Access to Coinbase Developer Platform services."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "HTTP-native x402 payment and paywalled API flows."
+    },
+    "@coinbase/agentkit": {
+      "repo": "coinbase/agentkit",
+      "why": "Agent-based and automated onchain interaction toolkit."
+    }
+  }
+}
